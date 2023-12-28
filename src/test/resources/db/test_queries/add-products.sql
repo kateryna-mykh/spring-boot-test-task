@@ -1,0 +1,3 @@
+INSERT INTO products (id, entry_date, code, name, quantity, status) VALUES (1, "2023-03-01", "11111", "Test Inventory 1", 20, "Paid");
+INSERT INTO products (id, entry_date, code, name, quantity, status) VALUES (2, "2023-03-01", "11111", "Test Inventory 2", 5, "Reserved");
+INSERT INTO products (id, entry_date, code, name, quantity, status) VALUES (3, "2023-03-01", "11112", "Test Inventory 3", 10, "New");
