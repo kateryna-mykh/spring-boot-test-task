@@ -32,8 +32,8 @@ import testtask.expandapis.dto.UserResponseDto;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class UserControllerTest {
     protected static MockMvc mockMvc;
-    protected static UserAuthDto mainRequestDto;
-    protected static UserResponseDto mainResponseDto;
+    private static UserAuthDto mainRequestDto;
+    private static UserResponseDto mainResponseDto;
     @Autowired
     private ObjectMapper objectMapper;
 
@@ -50,7 +50,7 @@ class UserControllerTest {
                     new ClassPathResource("/db/test_queries/add-user.sql"));
         }
         mainRequestDto = new UserAuthDto("testUser", "testPassword");
-        mainResponseDto = new UserResponseDto(1L, "testUser");
+        //mainResponseDto = new UserResponseDto(1L, "testUser");
     }
 
     @AfterAll

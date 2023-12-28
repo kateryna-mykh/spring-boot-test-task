@@ -31,7 +31,7 @@ public class User implements UserDetails {
     @NotNull
     @ToString.Exclude
     private String password;
-    @Column(nullable = false)
+    @Column(nullable = false, name = "is_deleted")
     private Boolean isDeleted = false;
     
     @Override
